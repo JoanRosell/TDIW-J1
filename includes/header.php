@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ES">
 <head>
 <meta charset="utf-8"/>
 <title>PC Componentes</title>
@@ -15,4 +15,3 @@
 
 <?php include_once("includes/menu.php"); ?>
 
-<body>

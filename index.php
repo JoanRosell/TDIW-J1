@@ -2,17 +2,14 @@
 <?php include_once("app/conexion.php"); ?>
 
 <?php
+    $consulta = "SELECT * FROM categorias";
+    $resultado = mysqli_query( $conn, $consulta );
 
-	
-$consulta = "SELECT * FROM categorias";
-$resultado = mysqli_query( $conn, $consulta );
-
-while ($columna = mysqli_fetch_array( $resultado ))
-{
-echo $columna['nombre'];
-echo "<br>";
-}
-
+    while ($columna = mysqli_fetch_array( $resultado ))
+    {
+        echo $columna['nombre'];
+        echo "<br>";
+    }
 ?>
     
 <!--main content-->
