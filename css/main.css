@@ -5,7 +5,7 @@ body { margin: initial; }
 .text-right { text-align: right;  }
 .bg-black { background: black;  }
 .txt-white { color: white;  }
-img { width: 100%; }
+img { width: initial; }
 
 footer { background: black; color: white; padding: 20px;  }
 .row { width: 100%; }
