@@ -1,8 +1,9 @@
 <?php
-include_once("app/connection.php");
+include_once __DIR__ . 'buildConnection.php';
 
-function getProducts($connection)
+function getProducts() : array
 {
+    $connection = buildConnection();
     $products = Array();
 
     try
@@ -15,8 +16,8 @@ function getProducts($connection)
     catch(PDOException $e)
     {
         echo $e->getMessage();
-        $connection = null;
     }
 
+    $connection = null;
     return $products;
 }
