@@ -1,16 +1,19 @@
 <html lang="es">
     <head>
         <title>Home</title>
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
-        <header>
-            <h1>Home Page</h1>
-            <!-- Main menu resource goes here -->
+        <header id="header">
+            <?php require_once __DIR__ . '/controller/mainMenu.php'; ?>
         </header>
 
-        <div id="categoryList">
-            <?php require_once __DIR__ . '/controller/listCategories.php'; ?>
+        <div class="flex-container">
+            <section id="main-section"></section>
         </div>
+
+        <footer id="footer">
+        </footer>
     </body>
 </html>

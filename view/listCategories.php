@@ -1,8 +1,7 @@
 <ul>
     <?php foreach($categories as $category) : ?>
     <li>
-        <p><?php echo $category['Name']?></p>
-        <p><?php echo $category['Description']?></p>
+        <a><?php echo $category['Name']?></a>
     </li>
     <?php endforeach; ?>
 </ul>
