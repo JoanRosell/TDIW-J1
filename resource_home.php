@@ -10,7 +10,9 @@
         </header>
 
         <div class="flex-container">
-            <section id="main-section"></section>
+            <section id="main-section">
+                <h1>Main Section</h1>
+            </section>
         </div>
 
         <footer id="footer">
