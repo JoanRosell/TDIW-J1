@@ -5,7 +5,7 @@
             <a href="javascript:void(0)" class="dropbtn">Categorías</a>
             <div class="dropdown-content">
                 <?php foreach($categories as $category) : ?>
-                        <a href=<?php echo '/index.php?action=' . strtolower($category['Name'])?>><?php echo $category['Name']?></a>
+                        <a href=<?php echo '/index.php?action=listProducts&categoryID=' . $category['CategoryID']?>><?php echo $category['Name']?></a>
                 <?php endforeach; ?>
             </div>
         </li>

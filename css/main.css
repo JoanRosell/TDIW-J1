@@ -5,6 +5,10 @@ body
     padding: 0px;
 }
 
+li p
+{
+    color: white;
+}
 div.flex-container
 {
     display: flex;

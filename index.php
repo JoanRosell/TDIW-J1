@@ -1,4 +1,3 @@
-
 <?php
 $action = null;
 if (isset($_GET['action']))
@@ -11,5 +10,8 @@ switch ($action)
         break;
     case "login":
         include __DIR__ . '/resource_login.php';
+        break;
+    case "listProducts":
+        include __DIR__ . '/resource_listProducts.php';
         break;
 }
