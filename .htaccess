@@ -1,6 +1,0 @@
-AuthType Basic
-AuthName "PC Componentes"
-AuthUserFile /home/TDIW/tdiw-j1/public_html/.htpasswd
-Require valid-user
-
-DirectoryIndex index.php
