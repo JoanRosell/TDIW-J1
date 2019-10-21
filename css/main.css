@@ -21,7 +21,7 @@ li p
 
 .header
 {
-    border-top: 3px solid #C3073F;
+    border-top: 3px solid green;
     position: sticky;
     top: 0px;
 }
