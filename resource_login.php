@@ -12,7 +12,7 @@
 
         <div class="flex-container">
             <section id="main-section">
-                <h1>Entrar</h1>
+                <h1>Iniciar sesión</h1>
                 <?php require_once __DIR__ . '/controller/loginForm.php'; ?>
             </section>
         </div>
