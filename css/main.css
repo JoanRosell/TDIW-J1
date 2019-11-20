@@ -1,4 +1,44 @@
+/* raleway-regular - latin */
+*
+{
+    font-family: Raleway;
+}
 
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway'), local('Raleway-Regular'),
+    url('../fonts/raleway-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/raleway-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+    url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('../fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+    url('../fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.league-gothic
+{
+    font-family: "League Gothic";
+}
+
+.league-gothic-condensed
+{
+    font-family: "League Gothic Condensed";
+}
 body
 {
     margin: 0px;
