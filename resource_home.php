@@ -5,17 +5,15 @@
     </head>
 
     <body>
-        <header id="header">
+        <header class="header">
             <?php require_once __DIR__ . '/controller/mainMenu.php'; ?>
         </header>
 
-        <div class="flex-container">
-            <section id="main-section">
-                <h1>Main Section</h1>
-            </section>
-        </div>
+        <section class="grid-container">
+            <?php require_once __DIR__ . '/testing/mockListProducts.php'; ?>
+        </section>
 
-        <footer id="footer">
+        <footer class="footer">
         </footer>
     </body>
 </html>

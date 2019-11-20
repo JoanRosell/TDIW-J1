@@ -1,4 +1,44 @@
+/* raleway-regular - latin */
+*
+{
+    font-family: Raleway;
+}
 
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway'), local('Raleway-Regular'),
+    url('../fonts/raleway-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/raleway-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+    url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('../fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+    url('../fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.league-gothic
+{
+    font-family: "League Gothic";
+}
+
+.league-gothic-condensed
+{
+    font-family: "League Gothic Condensed";
+}
 body
 {
     margin: 0px;
@@ -9,16 +49,8 @@ li p
 {
     color: white;
 }
-div.flex-container
-{
-    display: flex;
-    flex-flow: row wrap;
-    padding-top: 2px;
-    height: 80%;
-    width: 100%;
-}
 
-footer#footer
+.footer
 {
     position: fixed;
     bottom: 0px;
@@ -27,14 +59,15 @@ footer#footer
     width: 100%;
 }
 
-header#header
+.header
 {
-    border-top: 3px solid #C3073F;
+    border-top: 3px solid green;
     position: sticky;
     top: 0px;
 }
 
-ul {
+ul
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -42,7 +75,8 @@ ul {
     background-color: #333;
 }
 
-li {
+li
+{
     float: left;
 }
 
@@ -51,7 +85,8 @@ li.right-align
     float: right;
 }
 
-li a, .dropbtn {
+li a, .dropbtn
+{
     display: inline-block;
     color: white;
     text-align: center;
@@ -59,15 +94,18 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover .dropbtn
+{
     background-color: black;
 }
 
-li.dropdown {
+li.dropdown
+{
     display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content
+{
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -76,7 +114,8 @@ li.dropdown {
     z-index: 1;
 }
 
-.dropdown-content a {
+.dropdown-content a
+{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -84,8 +123,26 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover
+{
+    background-color: #f1f1f1;
+}
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content
+{
     display: block;
+}
+
+.grid-container
+{
+    display: grid;
+    background-color: lightgray;
+    grid-template-columns: auto auto auto auto;
+    padding: 1rem;
+    grid-gap: 1rem;
+}
+
+.mockProduct
+{
+    background-color: white;
 }

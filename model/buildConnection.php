@@ -1,7 +1,14 @@
 <?php
+
+
+
 function buildConnection() : PDO
 {
-    include __DIR__ . '/config.php';
+    $servername = "localhost";
+    $dbname = 'tdiwj1';
+    $username = 'tdiw-j1';
+    $password = 'ovLRZ7bS';
+
     $dsn = "mysql:host=$servername;dbname=$dbname;charset=UTF8";
     $dbh = null;
 
