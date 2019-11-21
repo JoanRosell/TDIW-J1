@@ -10,7 +10,12 @@
             </div>
         </li>
         <li class="right-align"><a href="/index.php?action=cart">Mi Carrito</a></li>
-        <li class="right-align"><a href="/index.php?action=login">Entra o regístrate</a></li>
+        <li class="dropdown right-align">
+            <a href="javascript:void(0)" class="dropbtn">Cuenta</a>
+            <div id="userMenu" class="dropdown-content">
+                <a id="loginBtn" href="/index.php?action=login">Iniciar sesión</a>
+            </div>
+        </li>
     </ul>
 </nav>
 

@@ -2,7 +2,6 @@
     <head>
         <title>Registro</title>
         <link rel="stylesheet" href="css/main.css">
-
     </head>
 
     <body>
@@ -12,8 +11,8 @@
 
         <div class="flex-container">
             <section id="main-section">
-                <h1>Iniciar sesión</h1>
-                <?php require_once __DIR__ . '/controller/loginForm.php'; ?>
+                <h1>Registrarse</h1>
+                <?php require_once __DIR__ . '/controller/signupForm.php'; ?>
             </section>
         </div>
 
