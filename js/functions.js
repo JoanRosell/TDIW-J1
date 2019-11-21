@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    if (sessionStorage.getItem("userLogged") === "true") {
+    if (sessionStorage.getItem("userIsLogged") === "true") {
         $("#userMenu").html(
             "<a href='#'>Mi cuenta</a>" +
             "<a href='#'>Mis compras</a>" +

@@ -22,10 +22,26 @@
     font-style: normal;
 }
 
+/* Vogue */
+@font-face {
+    font-family: 'Vogue';
+    src: url('../fonts/Vogue.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'League Gothic Condensed';
     src: url('../fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
     url('../fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Blacksword */
+@font-face {
+    font-family: 'Blacksword';
+    src: url('../fonts/Blacksword.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -38,6 +54,16 @@
 .league-gothic-condensed
 {
     font-family: "League Gothic Condensed";
+}
+
+.vogue
+{
+    font-family: Vogue;
+}
+
+.blacksword
+{
+    font-family: Blacksword;
 }
 body
 {
@@ -142,7 +168,16 @@ li.dropdown
     grid-gap: 1rem;
 }
 
-.mockProduct
+.grid-container > article
 {
     background-color: white;
+    text-align: center;
+}
+
+h1.title
+{
+    font-family: Blacksword;
+    text-align: center;
+    font-weight: normal;
+    font-size: 5rem;
 }

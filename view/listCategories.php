@@ -1,7 +1,4 @@
-<ul>
-    <?php foreach($categories as $category) : ?>
-    <li>
-        <a><?php echo $category['Name']?></a>
-    </li>
-    <?php endforeach; ?>
-</ul>
+<?php foreach($categories as $category) : ?>
+    <article id="<?php echo $category['CategoryID']?>"><?php echo $category['Name']?></article>
+<?php endforeach; ?>
+
