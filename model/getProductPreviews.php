@@ -8,7 +8,7 @@ function getProducts() : array
 
     try
     {
-        $stmt = $connection->prepare("SELECT ProductID, Name, Price, Image FROM Products WHERE CategoryID=" . $_GET['categoryID']);
+        $stmt = $connection->prepare("SELECT ProductID, Name, Price, Image FROM products WHERE CategoryID=" . $_GET['categoryID']);
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $stmt->execute();
         $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
