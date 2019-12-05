@@ -8,7 +8,7 @@ function getCategories() : array
 
     try
     {
-        $stmt = $connection->prepare("SELECT * FROM Categories");
+        $stmt = $connection->prepare("SELECT * FROM categories");
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $stmt->execute();
         $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);

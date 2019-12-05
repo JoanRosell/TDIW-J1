@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="TDIW" uuid="7769a03b-ad58-423e-a779-8326d79918c6">
+    <data-source source="LOCAL" name="@localhost" uuid="027ea3e2-f3cd-4a78-9bc3-9b3466039df7">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>

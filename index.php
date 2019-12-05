@@ -24,7 +24,4 @@ switch ($action)
     case "signup":
         include __DIR__ . '/resource_signup.php';
         break;
-    case "listProducts":
-        include __DIR__ . '/resource_listProducts.php';
-        break;
 }

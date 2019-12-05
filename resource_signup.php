@@ -1,7 +1,7 @@
 <html lang="es">
     <head>
         <title>Registro</title>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.css?v= <?php echo time(); ?>">
     </head>
 
     <body>
