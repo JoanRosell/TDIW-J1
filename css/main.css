@@ -1,148 +1,146 @@
-/* raleway-regular - latin */
-*
-{
-    font-family: Raleway;
+
+* {
+    font-family: Helvetica;
+    color: #D5D6D2;
+}
+
+h1, h2, h3 {
+    font-family: "Bebas Neue";
+    color: #FF8D3F;
+    letter-spacing: 0.15rem;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    src: local('Raleway'), local('Raleway-Regular'),
-    url('../fonts/raleway-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../fonts/raleway-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue'), local('BebasNeue-Regular'),
+    url('../fonts/BebasNeue-Regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/BebasNeue-Regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     font-weight: normal;
     font-style: normal;
 }
 
-/* Regular */
-@font-face {
-    font-family: 'League Gothic';
-    src: url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-    url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'League Gothic Condensed';
-    src: url('../fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
-    url('../fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.league-gothic
-{
-    font-family: "League Gothic";
-}
-
-.league-gothic-condensed
-{
-    font-family: "League Gothic Condensed";
-}
-body
-{
-    margin: 0px;
-    padding: 0px;
-}
-
-li p
-{
-    color: white;
-}
-
-.footer
-{
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    height: 10%;
-    width: 100%;
-}
-
-.header
-{
-    border-top: 3px solid green;
-    position: sticky;
-    top: 0px;
-}
-
-ul
-{
-    list-style-type: none;
+body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    background-color: #353C3F;
 }
 
-li
-{
-    float: left;
-}
-
-li.right-align
-{
-    float: right;
-}
-
-li a, .dropbtn
-{
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 1rem 1rem;
+a {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn
-{
-    background-color: black;
+ul {
+    list-style: none;
 }
 
-li.dropdown
-{
-    display: inline-block;
+ul#mainMenu {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-.dropdown-content
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2rem;
+    grid-gap: 0.2rem;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-card
 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 0.2rem solid black;
+}
+
+#mainMenu .grid-item {
+    padding: 1rem;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    background-color: #756867;
+}
+
+.menu-item:hover > svg {
+    stroke: #FF8D3F;
+}
+
+.content-wrapper
+{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.title
+{
+    font-family: "Bebas Neue";
+    font-size: xx-large;
+    color: #FF8D3F;
+}
+
+.top-menu
+{
+    box-shadow: 0 0 0.8rem 0 #FF8D3F;
     z-index: 1;
 }
 
-.dropdown-content a
-{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
 }
 
-.dropdown-content a:hover
-{
-    background-color: #f1f1f1;
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgba(56, 63, 66, 1); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.dropdown:hover .dropdown-content
-{
-    display: block;
+#asideMenuCloseButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.75rem;
 }
 
-.grid-container
-{
+.verticalGrid  {
     display: grid;
-    background-color: lightgray;
-    grid-template-columns: auto auto auto auto;
-    padding: 1rem;
-    grid-gap: 1rem;
+    grid-template-columns: auto;
 }
 
-.mockProduct
+.verticalGrid .grid-item
 {
-    background-color: white;
+    justify-content: left;
 }
+
+#asideMenu li:hover {
+    cursor: unset;
+    background-color: unset;
+}
+
+#asideMenu a:hover {
+    cursor: pointer;
+    color: #FF8D3F;
+}
+
+#asideMenu li#asideMenuCloseButton:hover {
+    cursor: pointer;
+}
+
+

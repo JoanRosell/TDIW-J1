@@ -15,6 +15,15 @@ if (!empty($_POST))
         'City' => $_POST['city']
     ];
 
-    $insert_query->execute($insertion_params);
+    $insertion_params['Email'] = filter_var($insertion_params['Email'], FILTER_VALIDATE_EMAIL);
+    $insertion_params['PostalCode'] = filter_var($insertion_params['PostalCode'], FILTER_VALIDATE_REGEXP, [
+        'options' => [
+            'regexp' => 'ˆ\d{5}$'
+        ]
+    ]);
+
+    if ($insertion_params)
+        $insert_query->execute($insertion_params);
+
     $dbh = null;
 }
