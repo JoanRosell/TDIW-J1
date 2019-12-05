@@ -11,7 +11,7 @@ $(document).ready(function () {
     function loadProductPreviews(categoryID) {
         addClass(mainSection, '.grid-container');
         mainSection.load("controller/listProductPreviews.php?categoryID=" + categoryID);
-    }
+}
 
     function addClass(element, classToAdd) {
         if (!element.hasClass(classToAdd))
@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     function loadProductDetail(productID) {
         removeClass(mainSection, '.grid-container');
-        mainSection.load("/getProductDetail.php?productID=" + productID);
+        mainSection.load("controller/getProductDetail.php?productID=" + productID);
     }
 
     function removeClass(element, classToRemove) {

@@ -7,7 +7,6 @@
     <body>
         <div class="content-wrapper">
             <header class="top-menu">
-                <?php require_once __DIR__ . '/controller/header.php'; ?>
                 <?php require_once __DIR__ . '/controller/mainMenu.php'; ?>
             </header>
 

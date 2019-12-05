@@ -20,9 +20,6 @@ function getProductDetail() : array
     return $product;
 }
 
-$product = getProductDetail();
+
 ?>
 
-<article>
-    <h1><?php echo htmlentities($product['Name']); ?></h1>
-</article>
