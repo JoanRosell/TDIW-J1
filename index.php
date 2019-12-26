@@ -1,5 +1,5 @@
 <script src="js/jquery.js" type="application/javascript"></script>
-<script src="js/functions.js" type="application/javascript"></script>
+<script src="js/src.js" type="application/javascript"></script>
 <?php
 
 if (session_status() == PHP_SESSION_NONE) {
@@ -23,5 +23,8 @@ switch ($action)
         break;
     case "signup":
         include __DIR__ . '/resource_signup.php';
+        break;
+    case "productDetail":
+        include __DIR__ . '/r_productDetail.php';
         break;
 }

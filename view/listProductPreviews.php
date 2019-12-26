@@ -1,6 +1,7 @@
 <?php foreach($products as $product) : ?>
-    <article id="<?php echo $product['ProductID']; ?>" class="productRef grid-item">
-        <?php echo htmlentities($product['Name']); ?>
-         <?php echo 'Precio: ' . htmlentities($product['Price']); ?>
+    <article class="grid-item">
+        <a href=<?php echo "/index.php?action=productDetail&productID=" . $product['ProductID']; ?>><img src="<?php echo $product['Image']; ?>" alt="product image"></a>
+        <h3><?php echo htmlentities($product['Name']); ?></h3>
+        <p> Price: <?php echo htmlentities($product['Price']); ?></p>
     </article>
 <?php endforeach; ?>

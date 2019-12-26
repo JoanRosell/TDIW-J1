@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '/model/buildConnection.php';
+include_once __DIR__ . '/buildConnection.php';
 
 function getProductDetail() : array
 {

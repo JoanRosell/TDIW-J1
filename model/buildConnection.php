@@ -5,7 +5,7 @@
 function buildConnection() : PDO
 {
     $servername = "localhost";
-    $dbname = 'tdiwj1';
+    $dbname = 'local';
     $username = 'tdiw-j1';
     $password = 'ovLRZ7bS';
 

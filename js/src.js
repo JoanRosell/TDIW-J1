@@ -18,17 +18,6 @@ $(document).ready(function () {
             element.addClass(classToAdd);
     }
 
-    body.on('click', ".productRef", function (event) {
-        let selection = $(this);
-        loadProductDetail(selection.attr('id'));
-        event.preventDefault();
-    });
-
-    function loadProductDetail(productID) {
-        removeClass(mainSection, '.grid-container');
-        mainSection.load("controller/getProductDetail.php?productID=" + productID);
-    }
-
     function removeClass(element, classToRemove) {
         if (element.hasClass(classToRemove))
             element.removeClass(classToRemove);
