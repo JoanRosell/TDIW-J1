@@ -4,7 +4,7 @@ require_once __DIR__ . '/model/buildConnection.php';
 $file_name = '';
 if (isset($_FILES['profileImage']) && !empty($_FILES['profileImage'])) {
     $file_name = $_SESSION['user_id'];
-    $destination_path = $filesAbsolutePath . $file_name;
+    $destination_path = $filesAbsolutePath . 'clients/' . $file_name;
     move_uploaded_file($_FILES['profileImage']['tmp_name'], $destination_path);
  }
 

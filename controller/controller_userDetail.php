@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../model/model_getUserInfo.php';
 $client_info = getClientInfo($_SESSION['user_id']);
-$img_path = '/img/default_user.png';
+$img_path = '/img/clients/default_user.png';
 
 if (!empty($client_info['ProfileImg']))
     $img_path = $publicPath . $client_info['ProfileImg'];
