@@ -163,4 +163,17 @@ svg {
     cursor: pointer;
 }
 
+.profile-layout {
+    display: grid;
+    grid-template-areas: "main main aside";
+}
+
+.profile-main {
+    grid-area: main;
+}
+
+.profile-aside {
+    grid-area: aside;
+}
+
 

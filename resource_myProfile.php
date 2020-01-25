@@ -14,10 +14,16 @@
     </header>
 
     <main id="mainSection">
-        <?php require_once __DIR__ . '/controller/controller_userDetail.php'; ?>
-        <a href="index.php?action=modifyAccount">Modify account information</a>
-        <br>
-        <a href="#">Order history</a>
+        <div class="profile-layout">
+            <div class="profile-main">
+                <?php require_once __DIR__ . '/controller/controller_userDetail.php'; ?>
+            </div>
+            <div class="profile-aside">
+                <a href="index.php?action=modifyAccount">Modify account information</a>
+                <a href="#">Order history</a>
+            </div>
+        </div>
+
     </main>
 
     <footer></footer>
