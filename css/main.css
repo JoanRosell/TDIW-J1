@@ -1,6 +1,6 @@
 
 * {
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
 }
 
 h1, h2, h3 {
@@ -53,7 +53,7 @@ ul#cartMenu {
     padding: 0;
 }
 footer {
-    height: 3em;
+    height: 3rem;
     background-color: #B03648;
 }
 
@@ -70,9 +70,11 @@ footer {
     justify-content: center;
 }
 
-.category-card
+.card
 {
-    border: 0.1rem solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 10rem;
+    text-align: center;
 }
 
 #mainMenu .grid-item {
