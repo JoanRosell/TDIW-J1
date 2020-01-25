@@ -25,7 +25,7 @@ try
             PostalCode = IF(? <> '', ?, PostalCode),
             Password = IF(? <> '', ?, Password),
             City = IF(? <> '', ?, City),            
-            ProfileImg = IF(? <> '', ?, ProfileImg),            
+            ProfileImg = IF(? <> '', ?, ProfileImg)            
         WHERE ClientID = " . $_SESSION['user_id'] . "
     ";
     $update_query = $dbh->prepare($query_text);
