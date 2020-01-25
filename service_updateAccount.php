@@ -51,4 +51,4 @@ catch (PDOException $e)
 {
     echo $e->getMessage();
 }
-header('Location: /index.php?action=myProfile');
+//header('Location: /index.php?action=myProfile');
