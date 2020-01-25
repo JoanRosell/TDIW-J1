@@ -15,9 +15,7 @@
 
     <main id="mainSection">
         <div class="profile-layout">
-            <div class="profile-main">
-                <?php require_once __DIR__ . '/controller/controller_userDetail.php'; ?>
-            </div>
+            <?php require_once __DIR__ . '/controller/controller_userDetail.php'; ?>
             <div class="profile-aside">
                 <a href="index.php?action=modifyAccount">Modify account information</a>
                 <a href="#">Order history</a>

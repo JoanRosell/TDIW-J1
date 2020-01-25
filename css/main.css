@@ -165,7 +165,7 @@ svg {
 
 .profile-layout {
     display: grid;
-    grid-template-areas: "main main aside";
+    grid-template-areas: "img main aside";
 }
 
 .profile-main {
