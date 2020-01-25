@@ -168,4 +168,9 @@ svg {
     grid-template-columns: auto auto auto;
 }
 
+#profileImg {
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
 
