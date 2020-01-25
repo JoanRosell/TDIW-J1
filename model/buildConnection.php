@@ -1,7 +1,5 @@
 <?php
 
-
-
 function buildConnection() : PDO
 {
     $servername = "localhost";

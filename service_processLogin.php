@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/model/buildConnection.php';
 
 if (!empty($_POST))
 {
@@ -12,7 +13,7 @@ if (!empty($_POST))
         ];
 
         $filters = [
-          'email' => FILTER_VALIDATE_EMAIL
+            'email' => FILTER_VALIDATE_EMAIL
         ];
 
         $select_params = filter_var_array($form_input, $filters);
@@ -22,21 +23,21 @@ if (!empty($_POST))
             $select_query->execute($select_params);
             $user = $select_query->fetch(PDO::FETCH_ASSOC);
 
-            if (isset($user))
+            if (!empty($user))
             {
                 if (password_verify($_POST['password'],  $user['Password']))
                 {
                     $_SESSION['userIsLogged'] = true;
-                    $_SESSION['username'] = $user['Name'];
+                    $_SESSION['user_id'] = $user['ClientID'];
+                    $_SESSION['user_name'] = $user['Name'];
                 }
             }
         }
-
-
     }
     catch(PDOException $exception)
     {
         die($exception->getMessage());
     }
 
+    header('Location: /index.php');
 }

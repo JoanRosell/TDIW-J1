@@ -1,4 +1,6 @@
 <?php
-include_once __DIR__ . "/../model/getCategories.php";
-$categories = getCategories();
+require_once __DIR__ . '/../model/model_getProductDetail.php';
+
+$cart_is_empty = empty($_SESSION['_cart']['products']);
+
 include_once __DIR__ . "/../view/mainMenu.php";

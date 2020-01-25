@@ -1,10 +1,10 @@
 <?php
-require_once __DIR__ . '/buildConnection.php';
+require_once __DIR__ . '/model/buildConnection.php';
 
 if (!empty($_POST))
 {
     $dbh = buildConnection();
-    $insert_query = $dbh->prepare("INSERT INTO Clients (Name, Email, Address, PostalCode, Password, City) VALUES (:Name, :Email, :Address, :PostalCode, :Password, :City)");
+    $insertion_query = $dbh->prepare("INSERT INTO Clients (Name, Email, Address, PostalCode, Password, City) VALUES (:Name, :Email, :Address, :PostalCode, :Password, :City)");
 
     $insertion_params = [
         'Name' => $_POST['name'],
@@ -23,7 +23,8 @@ if (!empty($_POST))
     ]);
 
     if ($insertion_params)
-        $insert_query->execute($insertion_params);
+        $insertion_query->execute($insertion_params);
 
     $dbh = null;
+    header('Location: /index.php');
 }

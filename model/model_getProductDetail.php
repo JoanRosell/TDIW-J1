@@ -1,13 +1,13 @@
 <?php
 include_once __DIR__ . '/buildConnection.php';
 
-function getProductDetail() : array
+function getProductDetail($product_id) : array
 {
     $product = null;
     try
     {
         $connection = buildConnection();
-        $stmt = $connection->prepare("SELECT ProductID, Name, Price, Image, Description FROM Products WHERE ProductID=" . $_GET['productID']);
+        $stmt = $connection->prepare("SELECT ProductID, Name, Price, Image, Description FROM Products WHERE ProductID=" . $product_id);
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $stmt->execute();
         $product = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -19,7 +19,3 @@ function getProductDetail() : array
 
     return $product;
 }
-
-
-?>
-

@@ -1,1 +1,1 @@
- <?php require_once __DIR__ . '/controller/listProductPreviews.php'; ?>
+ <?php require_once __DIR__ . '/controller/listProductPreviews.php';
