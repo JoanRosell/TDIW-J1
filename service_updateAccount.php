@@ -2,10 +2,10 @@
 require_once __DIR__ . '/model/buildConnection.php';
 
 $file_name = '';
-if (isset($_FILES['profileImage']) && !empty($_FILES['profileImage'])) {
+if (isset($_FILES['profileImg']) && !empty($_FILES['profileImg'])) {
     $file_name = $_SESSION['user_id'];
     $destination_path = $filesAbsolutePath . 'clients/' . $file_name;
-    move_uploaded_file($_FILES['profileImage']['tmp_name'], $destination_path);
+    move_uploaded_file($_FILES['profileImg']['tmp_name'], $destination_path);
  }
 
 $new_password = '';
