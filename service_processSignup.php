@@ -4,7 +4,7 @@ require_once __DIR__ . '/model/buildConnection.php';
 if (!empty($_POST))
 {
     $dbh = buildConnection();
-    $insertion_query = $dbh->prepare("INSERT INTO Clients (Name, Email, Address, PostalCode, Password, City) VALUES (:Name, :Email, :Address, :PostalCode, :Password, :City)");
+    $insertion_query = $dbh->prepare("INSERT INTO clients (Name, Email, Address, PostalCode, Password, City) VALUES (:Name, :Email, :Address, :PostalCode, :Password, :City)");
 
     $insertion_params = [
         'Name' => $_POST['name'],

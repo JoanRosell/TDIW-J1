@@ -7,7 +7,7 @@ function getProductDetail($product_id) : array
     try
     {
         $connection = buildConnection();
-        $stmt = $connection->prepare("SELECT ProductID, Name, Price, Image, Description FROM Products WHERE ProductID=" . $product_id);
+        $stmt = $connection->prepare("SELECT ProductID, Name, Price, Image, Description FROM products WHERE ProductID=" . $product_id);
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $stmt->execute();
         $product = $stmt->fetch(PDO::FETCH_ASSOC);

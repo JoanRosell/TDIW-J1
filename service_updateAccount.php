@@ -17,7 +17,7 @@ try
 {
     $dbh = buildConnection();
     $query_text = "
-        UPDATE Clients
+        UPDATE clients
         SET
             Name = IF(? <> '', ?, Name),
             Email = IF(? <> '', ?, Email),
