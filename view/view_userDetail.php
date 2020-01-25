@@ -1,5 +1,5 @@
 <section>
-    <img src="<?php echo __DIR__ . $publicPath . $client_info['ProfileImg'];?>">
+    <img src="<?php echo __DIR__ . '/..' . $publicPath . $client_info['ProfileImg'];?>">
     Name: <?php echo htmlentities($client_info['Name'], ENT_QUOTES | ENT_HTML5, 'UTF-8') ;?> <br>
     Email: <?php echo htmlentities($client_info['Email'], ENT_QUOTES | ENT_HTML5, 'UTF-8') ;?> <br>
     City: <?php echo htmlentities($client_info['City'], ENT_QUOTES | ENT_HTML5, 'UTF-8') ;?> <br>
