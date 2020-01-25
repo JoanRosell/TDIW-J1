@@ -12,19 +12,19 @@
     <fieldset>
         <legend>Personal Information</legend>
         <label for="username">Username</label>
-        <input name="username" type="text" value=<?php echo $clientInfo['Name']; ?>> <br>
+        <input name="username" type="text" value="<?php echo $clientInfo['Name']; ?>"> <br>
 
         <label for="address">Address</label>
-        <input name="address" type="text" maxlength="30" value=<?php echo $clientInfo['Address']; ?>> <br>
+        <input name="address" type="text" maxlength="30" value="<?php echo $clientInfo['Address']; ?>"> <br>
 
         <label for="city">City</label>
-        <input name="city" type="text" maxlength="30" value=<?php echo $clientInfo['City']; ?>> <br>
+        <input name="city" type="text" maxlength="30" value="<?php echo $clientInfo['City']; ?>"> <br>
 
         <label for="zipcode">Zip Code</label>
-        <input name="zipcode" type="number" pattern="ˆ\d{5}$" value=<?php echo $clientInfo['PostalCode']; ?>>
+        <input name="zipcode" type="number" pattern="ˆ\d{5}$" value="<?php echo $clientInfo['PostalCode']; ?>">
 
         <label for="profileImg">Profile image</label>
-        <input name="profileImg" type="file" value=<?php echo ""; ?>> <br>
+        <input name="profileImg" type="file"> <br>
     </fieldset>
     <br>
     <button type="submit">Update information</button>

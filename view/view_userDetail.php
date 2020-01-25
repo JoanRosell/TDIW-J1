@@ -1,4 +1,5 @@
 <section>
+    <h1>Welcome, <?php echo htmlentities($client_info['Name'], ENT_QUOTES | ENT_HTML5); ?></h1>
     <img src="<?php echo $img_path; ?>">
     Name: <?php echo htmlentities($client_info['Name'], ENT_QUOTES | ENT_HTML5, 'UTF-8') ;?> <br>
     Email: <?php echo htmlentities($client_info['Email'], ENT_QUOTES | ENT_HTML5, 'UTF-8') ;?> <br>

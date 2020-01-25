@@ -14,7 +14,6 @@
     </header>
 
     <main id="mainSection">
-        <h1>Welcome, <?php echo htmlentities($_SESSION['user_name'], ENT_QUOTES | ENT_HTML5); ?></h1>
         <?php require_once __DIR__ . '/controller/controller_userDetail.php'; ?>
         <a href="index.php?action=modifyAccount">Modify account information</a>
         <br>
