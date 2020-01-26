@@ -21,6 +21,6 @@ if (!empty($orders)) {
     <?php
     endforeach;
 } else { ?>
-    <h1>No orders made</h1>
+    <h1>No orders were made.</h1>
 <?php
 }
