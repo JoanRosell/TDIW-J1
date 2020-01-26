@@ -74,6 +74,11 @@ footer {
     background-color: #ff5733;
 }
 
+footer p {
+    color: white;
+    text-align: center;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
