@@ -61,7 +61,7 @@ footer {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 2rem;
-    grid-gap: 0.2rem;
+    grid-gap: 0.4rem;
 }
 
 .grid-item {
@@ -171,6 +171,10 @@ svg {
 #profileImg {
     max-width: 20rem;
     max-height: 20rem;
+}
+
+.categoryCard {
+    box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2);
 }
 
 
