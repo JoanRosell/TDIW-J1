@@ -2,7 +2,7 @@
 require_once __DIR__ . '/model/model_buildConnection.php';
 
 $file_name = '';
-if (isset($_FILES['profileImg']) && !empty($_FILES['profileImg'])) {
+if (isset($_FILES['profileImg']) && $_FILES['profileImg']['error'] == UPLOAD_ERR_OK) {
     $file_name = $_SESSION['user_id'];
     $destination_path = $filesAbsolutePath . 'clients/' . $file_name;
     move_uploaded_file($_FILES['profileImg']['tmp_name'], $destination_path);
