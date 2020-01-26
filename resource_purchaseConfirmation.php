@@ -10,7 +10,7 @@
     <?php require_once __DIR__ . '/controller/mainMenu.php'; ?>
     <?php require_once __DIR__ . '/controller/controller_asideMenu.php'; ?>
 </header>
-<main>
+<main id="mainSection">
     <h1>
         Order processed successfully.
     </h1>

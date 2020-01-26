@@ -10,7 +10,8 @@ if (!empty($product_details)) :
         </article>
 <?php
     endforeach; ?>
-    <article><button type="button" id="makePurchaseButton">Finish Purchase</button></article>
+    <article><a class="button" href="/index.php?action=performPurchase">Finish Purchase</a></article>
+    <article><a class="button" href="/index.php?action=clearCart">Clear shopping cart</a></article>
 <?php
 else : ?>
         <h2>No products added to cart</h2>

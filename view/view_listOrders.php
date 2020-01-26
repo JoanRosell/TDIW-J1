@@ -18,6 +18,7 @@ if (!empty($orders)) {
                 <?php endforeach; ?>
             </div>
         </section>
+    <hr><br>
     <?php
     endforeach;
 } else { ?>

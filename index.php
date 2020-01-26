@@ -54,4 +54,7 @@ switch ($action)
     case "orderHistory":
         include __DIR__ . '/resource_orderHistory.php';
         break;
+    case "clearCart":
+        include __DIR__ . '/service_clearCart.php';
+        break;
 }

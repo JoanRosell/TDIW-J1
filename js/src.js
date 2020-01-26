@@ -84,7 +84,7 @@ $(document).ready(function () {
     });
 
     body.on('click', '#makePurchaseButton',function () {
-        window.location.href = "/index.php?action=performPurchase";
+        window.location.href = "";
     });
 
     let newPassword = $("#passw");
