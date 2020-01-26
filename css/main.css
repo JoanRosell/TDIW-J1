@@ -189,4 +189,9 @@ a.button:hover {
     opacity: 85%;
 }
 
+img {
+    max-width: 15rem;
+    max-height: 15rem;
+}
+
 
