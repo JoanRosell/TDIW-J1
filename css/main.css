@@ -180,7 +180,13 @@ svg {
 a.button {
     display: block;
     padding: 1rem;
-    border: 0.1rem solid #ff5733;
+    text-align: center;
+    background-color: #ff5733;
+    color: white;
+}
+
+a.button:hover {
+    opacity: 70%;
 }
 
 
