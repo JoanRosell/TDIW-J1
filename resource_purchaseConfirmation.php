@@ -23,6 +23,6 @@
         Please check your email for more details.
     </h3>
 </main>
-<footer></footer>
+<footer><?php require_once __DIR__ . '/controller/controller_footer.php'; ?></footer>
 </body>
 </html>

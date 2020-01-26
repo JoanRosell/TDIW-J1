@@ -21,5 +21,6 @@
     <h1>Customer Information</h1>
     <?php require_once __DIR__ . '/controller/controller_updateAccountForm.php'; ?>
 </main>
+<footer><?php require_once __DIR__ . '/controller/controller_footer.php'; ?></footer>
 </body>
 </html>

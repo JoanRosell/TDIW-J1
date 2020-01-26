@@ -24,6 +24,7 @@
         </main>
 
         <footer id="footer">
+            <?php require_once __DIR__ . '/controller/controller_footer.php'; ?>
         </footer>
     </div>
     </body>

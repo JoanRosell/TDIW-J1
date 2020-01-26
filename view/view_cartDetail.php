@@ -3,10 +3,10 @@ if (!empty($product_details)) :
     foreach ($product_details as $product_detail) : ?>
         <article class="grid-item">
             <img src="<?php echo $product_detail['info']['Image']; ?>" alt="Product Image">
-            <h2><?php echo htmlentities($product_detail['info']['Name']); ?></h2>
-            <h4>Unitary Price: <?php echo htmlentities($product_detail['info']['Price']); ?>&euro;</h4>
-            <h4>Units: <?php echo htmlentities($product_detail['units']); ?></h4>
-            <h4>Total Price: <?php echo htmlentities($product_detail['info']['Price'] * $product_detail['units']); ?>&euro;</h4>
+            <h2><?php echo htmlentities($product_detail['info']['Name'], ENT_HTML5 | ENT_QUOTES, 'UTF-8'); ?></h2>
+            <h4>Unitary Price: <?php echo htmlentities($product_detail['info']['Price'], ENT_HTML5 | ENT_QUOTES, 'UTF-8'); ?>&euro;</h4>
+            <h4>Units: <?php echo htmlentities($product_detail['units'], ENT_HTML5 | ENT_QUOTES, 'UTF-8'); ?></h4>
+            <h4>Total Price: <?php echo htmlentities($product_detail['info']['Price'] * $product_detail['units'], ENT_HTML5 | ENT_QUOTES, 'UTF-8'); ?>&euro;</h4>
         </article>
 <?php
     endforeach; ?>
