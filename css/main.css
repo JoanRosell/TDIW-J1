@@ -28,8 +28,25 @@ a {
     color: black;
 }
 
+a.button {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    background-color: #ff5733;
+    color: white;
+}
+
+a.button:hover {
+    opacity: 85%;
+}
+
 ul {
     list-style: none;
+}
+
+img {
+    max-width: 15rem;
+    max-height: 15rem;
 }
 
 #mainSection {
@@ -121,15 +138,15 @@ svg {
 }
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
-    background-color: whitesmoke; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.4s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.4s;
 }
 
 #asideMenuCloseButton {
@@ -176,22 +193,3 @@ svg {
 .categoryCard {
     box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2);
 }
-
-a.button {
-    display: block;
-    padding: 1rem;
-    text-align: center;
-    background-color: #ff5733;
-    color: white;
-}
-
-a.button:hover {
-    opacity: 85%;
-}
-
-img {
-    max-width: 15rem;
-    max-height: 15rem;
-}
-
-

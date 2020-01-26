@@ -20,7 +20,8 @@
             <h2>Account</h2>
         </l1>
         <?php if ($_SESSION['userIsLogged']) : ?>
-            <li class="menu-item grid-item"><a href="/index.php?action=myProfile">My Profile</a></li>
+            <li class="menu-item grid-item"><a href="/index.php?action=myProfile">My profile</a></li>
+            <li class="menu-item grid-item"><a href="/index.php?action=orderHistory">My orders</a></li>
             <li class="menu-item grid-item"><a href="/index.php?action=logout">Log Out</a></li>
         <?php else: ?>
         <li class="menu-item grid-item"><a href="/index.php?action=login">Log In</a></li>

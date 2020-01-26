@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '/buildConnection.php';
+include_once __DIR__ . '/model_buildConnection.php';
 
 function getClientInfo($user_id) : array
 {

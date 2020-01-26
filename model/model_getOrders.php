@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/buildConnection.php';
+require_once __DIR__ . '/model_buildConnection.php';
 require_once __DIR__ . '/model_getProductDetail.php';
 require_once  __DIR__ . '/model_getUserInfo.php';
 

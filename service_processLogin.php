@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/model/buildConnection.php';
+require_once __DIR__ . '/model/model_buildConnection.php';
 
 if (!empty($_POST))
 {
