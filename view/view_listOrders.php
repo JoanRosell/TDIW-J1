@@ -17,8 +17,8 @@ if (!empty($orders)) {
                     </article>
                 <?php endforeach; ?>
             </div>
+            <div><hr></div>
         </section>
-    <hr><br>
     <?php
     endforeach;
 } else { ?>
