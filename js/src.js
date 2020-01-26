@@ -15,7 +15,7 @@ $(document).ready(function () {
             mainSection.addClass('grid-container');
         }
 
-        mainSection.load("controller/view_listProductPreviews.php?categoryID=" + categoryID);
+        mainSection.load("controller/controller_listProductPreviews.php?categoryID=" + categoryID);
     }
 
     body.on("click", ".productRef", function (event) {
