@@ -5,7 +5,7 @@ require_once  __DIR__ . '/model_getUserInfo.php';
 
 function getOrders($user_id) : array
 {
-    $orders = null;
+    $orders = array();
     try {
         $dbh = buildConnection();
         $invoices_query = "SELECT * FROM invoice WHERE ClientID = " . $user_id;
