@@ -33,7 +33,7 @@ function getOrders($user_id) : array
 
                 foreach ($sales as $sale)
                 {
-                    $orders[$invoice['InvoiceID']]['sales'][$sale['SaleID']] = [
+                    $orders['invoices'][$invoice['InvoiceID']]['sales'][$sale['SaleID']] = [
                         'units' => $sale['SellQuantity'],
                         'price' => $sale['SellPrice'],
                         'info' => getProductDetail($sale['ProductID'])
