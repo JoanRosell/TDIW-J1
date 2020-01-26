@@ -5,7 +5,7 @@
 
 h1, h2, h3 {
     font-family: "Bebas Neue";
-    color: #B03648;
+    color: #ff5733;
     letter-spacing: 0.15rem;
 }
 
@@ -54,7 +54,7 @@ ul#cartMenu {
 }
 footer {
     height: 3rem;
-    background-color: #B03648;
+    background-color: #ff5733;
 }
 
 .grid-container {
@@ -89,7 +89,7 @@ footer {
 }
 
 .menu-item:hover > svg {
-    stroke: #B03648;
+    stroke: #ff5733;
 }
 
 .content-wrapper
@@ -103,7 +103,7 @@ footer {
 {
     font-family: "Bebas Neue";
     font-size: xx-large;
-    color: #B03648;
+    color: #ff5733;
 }
 
 .top-menu
@@ -156,7 +156,7 @@ svg {
 
 #asideMenu a:hover {
     cursor: pointer;
-    color: #B03648;
+    color: #ff5733;
 }
 
 #asideMenu li#asideMenuCloseButton:hover {
