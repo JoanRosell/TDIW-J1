@@ -12,29 +12,33 @@ function getOrders($user_id) : array
         $stmt = $dbh->prepare($invoices_query);
         $stmt->execute();
         $invoices = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        $orders['client_info'] = getClientInfo($_SESSION['user_id']);
 
-        foreach ($invoices as $invoice)
+        if (!empty($invoices))
         {
-            $orders[$invoice['InvoiceID']] = [
-                'qty' => $invoice['Quantity'],
-                'total_price' => $invoice['Price'],
-                'date' => $invoice['Date'],
-                'sales' => []
-            ];
+            $orders['client_info'] = getClientInfo($_SESSION['user_id']);
 
-            $sales_query = "SELECT * FROM sales WHERE InvoiceID = " . $invoice['InvoiceID'];
-            $stmt = $dbh->prepare($sales_query);
-            $stmt->execute();
-            $sales = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-            foreach ($sales as $sale)
+            foreach ($invoices as $invoice)
             {
-                $orders[$invoice['InvoiceID']]['sales'][$sale['SaleID']] = [
-                    'units' => $sale['SellQuantity'],
-                    'price' => $sale['SellPrice'],
-                    'info' => getProductDetail($sale['ProductID'])
+                $orders[$invoice['InvoiceID']] = [
+                    'qty' => $invoice['Quantity'],
+                    'total_price' => $invoice['Price'],
+                    'date' => $invoice['Date'],
+                    'sales' => []
                 ];
+
+                $sales_query = "SELECT * FROM sales WHERE InvoiceID = " . $invoice['InvoiceID'];
+                $stmt = $dbh->prepare($sales_query);
+                $stmt->execute();
+                $sales = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                foreach ($sales as $sale)
+                {
+                    $orders[$invoice['InvoiceID']]['sales'][$sale['SaleID']] = [
+                        'units' => $sale['SellQuantity'],
+                        'price' => $sale['SellPrice'],
+                        'info' => getProductDetail($sale['ProductID'])
+                    ];
+                }
             }
         }
     }
