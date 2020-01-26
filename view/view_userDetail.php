@@ -11,7 +11,7 @@
         <p>Postal Code: <?php echo htmlentities($client_info['PostalCode'], ENT_QUOTES | ENT_HTML5, 'UTF-8') ;?></p>
     </div>
     <div>
-        <a href="index.php?action=modifyAccount">Modify account information</a>
-        <a href="#">Order history</a>
+        <a href="index.php?action=modifyAccount" class="button">Modify account information</a>
+        <a href="#" class="button">Order history</a>
     </div>
 </div>

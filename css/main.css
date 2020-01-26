@@ -177,4 +177,10 @@ svg {
     box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2);
 }
 
+a.button {
+    display: block;
+    padding: 1rem;
+    border: 0.1rem solid #ff5733;
+}
+
 
