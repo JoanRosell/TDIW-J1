@@ -4,8 +4,8 @@ if (!empty($product_details)) :
         <article class="grid-item">
             <img src="<?php echo $product_detail['info']['Image']; ?>" alt="Product Image">
             <h2><?php echo htmlentities($product_detail['info']['Name']); ?></h2>
-             <h4>Unitary Price: <?php echo htmlentities($product_detail['info']['Price']); ?>&euro;</h4>
-            <h4>Units: <?php echo htmlentities($product_detail['units']); ?>&euro;</h4>
+            <h4>Unitary Price: <?php echo htmlentities($product_detail['info']['Price']); ?>&euro;</h4>
+            <h4>Units: <?php echo htmlentities($product_detail['units']); ?></h4>
             <h4>Total Price: <?php echo htmlentities($product_detail['info']['Price'] * $product_detail['units']); ?>&euro;</h4>
         </article>
 <?php

@@ -1,13 +1,13 @@
 <?php
 if (!empty($orders)) {
-    foreach ($orders as $order): ?>
+    foreach ($orders['invoices'] as $invoice): ?>
         <section class="grid-item">
-            <p>Date of purchase: <?php echo htmlentities($order['date'], ENT_HTML5 | ENT_QUOTES); ?></p>
-            <p>Total price charged: <?php echo htmlentities($order['total_price'], ENT_HTML5 | ENT_QUOTES); ?>&euro;</p>
-            <p>Number of units purchased: <?php echo htmlentities($order['qty'], ENT_HTML5 | ENT_QUOTES); ?></p>
+            <p>Date of purchase: <?php echo htmlentities($invoice['date'], ENT_HTML5 | ENT_QUOTES); ?></p>
+            <p>Total price charged: <?php echo htmlentities($invoice['total_price'], ENT_HTML5 | ENT_QUOTES); ?>&euro;</p>
+            <p>Number of units purchased: <?php echo htmlentities($invoice['qty'], ENT_HTML5 | ENT_QUOTES); ?></p>
             <p>List of products purchased:</p>
             <div class="verticalGrid">
-                <?php foreach ($order['sales'] as $sale): ?>
+                <?php foreach ($invoice['sales'] as $sale): ?>
                     <article class="grid-item">
                         <img src="<?php echo $sale['info']['Image']; ?>" alt="Product Image">
                         <h3><?php echo htmlentities($sale['info']['Name'], ENT_QUOTES | ENT_HTML5); ?></h3>

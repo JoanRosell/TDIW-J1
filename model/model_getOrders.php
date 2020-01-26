@@ -16,10 +16,10 @@ function getOrders($user_id) : array
         if (!empty($invoices))
         {
             $orders['client_info'] = getClientInfo($_SESSION['user_id']);
-
+            $orders['invoices'] = [];
             foreach ($invoices as $invoice)
             {
-                $orders[$invoice['InvoiceID']] = [
+                $orders['invoices'][$invoice['InvoiceID']] = [
                     'qty' => $invoice['Quantity'],
                     'total_price' => $invoice['Price'],
                     'date' => $invoice['Date'],
