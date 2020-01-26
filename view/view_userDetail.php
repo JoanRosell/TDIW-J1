@@ -12,6 +12,6 @@
     </div>
     <div>
         <a href="index.php?action=modifyAccount" class="button">Modify account information</a> <br>
-        <a href="#" class="button">Order history</a>
+        <a href="index.php?action=orderHistory" class="button">Order history</a>
     </div>
 </div>

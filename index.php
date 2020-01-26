@@ -51,4 +51,7 @@ switch ($action)
     case "updateAccount":
         include __DIR__ . '/service_updateAccount.php';
         break;
+    case "orderHistory":
+        include __DIR__ . '/resource_orderHistory.php';
+        break;
 }
